@@ -1,4 +1,4 @@
-f = open('test.txt', 'r')
+f = open('twoIn.txt', 'r')
 sum = 0
 i = 1
 count = 1
@@ -7,15 +7,13 @@ stop = False
 for row in f:
     list = row.split()
     list = map(int, list)
+    list.sort(reverse=True)
+    print list
     for value in list:
-        while i < len(list) & stop == False:
+        while i < len(list):
             current = list[i]
             if value != current:
-                if current % value == 0:
-                        sum += current / value
-                        #stop = True
-                        i = len(list)
-                elif value % current == 0:
+                if value % current == 0:
                         sum += value / current
                         i = len(list)
                         #stop = True
