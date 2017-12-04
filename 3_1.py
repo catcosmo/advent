@@ -3,7 +3,7 @@ quadEdge = 1
 quadSize = 1
 quadStart = 1
 total = 1
-input =  16 #result 34
+input = 289326 #result 34
 
 
 # 1. calculate distance from center to spiral ring
@@ -32,14 +32,13 @@ mid3 = mid2 + jump
 mid4 = mid3 + jump
 midPoints = [mid1, mid2, mid3, mid4]
 print midPoints
-#find middle point nearest value & calculate distance
-distance = 0
+# find middle point nearest value & calculate distance
+distance = input
 for point in midPoints:
     newDistance = input - point
-    print distance, newDistance
-    if newDistance < distance:
+    if newDistance > 0 & newDistance < distance:
         distance = newDistance
 
-# add rank and distance
+# 3. add rank and distance
 manhattenDistance = rank + distance
 print manhattenDistance
