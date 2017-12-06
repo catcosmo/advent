@@ -3,7 +3,7 @@ quadEdge = 1
 quadSize = 1
 quadStart = 1
 total = 1
-input = 289326 #result 34
+input = 289326 #result 477
 
 
 # 1. calculate distance from center to spiral ring

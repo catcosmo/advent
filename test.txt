@@ -1,3 +1,5 @@
-aa bb cc dd aaa
-aa bb cc dd aa
-aa bb cc dd ee
+0
+3
+0
+1
+-3
