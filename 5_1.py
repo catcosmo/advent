@@ -8,7 +8,7 @@ for row in f:
 
 jump_instructions = map(int, jump_instructions)
 
-while (current >= 0 & current < len(jump_instructions)):
+while (current >= 0 and current < len(jump_instructions)):
     jump_instructions[current] += 1
     current = current + jump_instructions[current] - 1
     jumps_count +=1

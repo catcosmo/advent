@@ -22,4 +22,5 @@ print 'adventskalendergluckskind des tages ist ' + wg[jackpot] + '!'
 # HOHOHO!
 
 # Losungshinweis 1: google([modulo, datetime, python])
-# Losungshinweis 2: dieses script liegt auf
+# Losungshinweis 2: dies ist 1 python script das die richtige antwort ausgibt wenn man es ausfuhrt.
+#                   ihr findet es hier: https://github.com/catcosmo/advent/blob/master/advLotto.py
