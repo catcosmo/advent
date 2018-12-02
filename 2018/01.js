@@ -7,7 +7,7 @@ let input = fs
 
 // Quick Solution 1.1 with reduce
 let output = input.reduce(
-  (frequency2, element2) => frequency2 + Number(element2),
+  (frequency, element) => frequency + Number(element),
   0
 );
 console.log("Calibrated frequency:" + output);
@@ -19,8 +19,7 @@ function getDoubleFrequency(input) {
 
   for (let i = 0; i < input.length; i++) {
     if (i === input.length - 1) i = 0;
-    let currentNumber = Number(input[i]);
-    frequency += currentNumber;
+    frequency += Number(input[i]);
     if (frequencies.includes(frequency))
       return "First double frequency: " + frequency;
     frequencies.push(frequency);
